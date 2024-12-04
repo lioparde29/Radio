@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Yahya</title>
+    <link rel="stylesheet" href="css/player.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Main Content -->
+    <main id="player">
+        <header>
+            <img src="images/logo.png" alt="Radio Yahya Logo">
+            <h2>Radio Yahya</h2>
+            <p id="title_radio">Q Music</p>
+        </header>
+
+        <div id="content">
+            <article id="buttons">
+                <img src="images/back.png" id="back" alt="Back">
+                <img src="images/play.png" id="play_pause" alt="Play/Pause">
+                <img src="images/next.png" id="next" alt="Next">
+                <audio id="audio-file" src=""></audio>
+            </article>
+
+            <article id="volume">
+                <h2>Sound</h2>
+                <input type="range" name="range" id="volume_range" min="0" max="100" value="50">
+
+                <h2>Speed</h2>
+                <input type="range" name="range" id="speed_range" min="50" max="200" value="100">
+            </article>
+
+            <article id="color">
+                <button id="color_1" style="background-color: rgb(231, 45, 45)"></button>
+                <button id="color_2" style="background-color: rgb(18, 235, 18)"></button>
+                <button id="color_3" style="background-color: rgb(32, 32, 228)"></button>
+            </article>
+        </div>
+
+        <footer>
+            <div class="card text-center">
+                <div class="card-footer text-body-secondary divpp">
+                   <p></p> © 2024 Copyright Reserved - <span class="divp">Coder Yahya</span>
+                </div>
+            </div>
+        </footer>
+        
+    </main>
+
+    <script src="script/player.js"></script>
+    <script src="script/volume.js"></script>
+    <script src="script/color.js"></script>
+</body>
+</html>
